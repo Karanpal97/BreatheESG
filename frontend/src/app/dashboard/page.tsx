@@ -128,7 +128,7 @@ export default function DashboardPage() {
                     <YAxis tick={{ fontSize: 10, fill: '#64748b' }} />
                     <Tooltip
                       contentStyle={{ background: '#111827', border: '1px solid #1e2d3d', borderRadius: 8, fontSize: 12 }}
-                      formatter={(v: number) => [`${v.toFixed(1)} kg CO₂e`, '']}
+                      formatter={(v: any) => [`${Number(v || 0).toFixed(1)} kg CO₂e`, '']}
                     />
                     <Bar dataKey="kg" radius={[4, 4, 0, 0]}>
                       {scopeData.map((entry, i) => <Cell key={i} fill={entry.color} />)}

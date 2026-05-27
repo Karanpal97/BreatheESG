@@ -172,7 +172,7 @@ export default function RecordDetailPage() {
                 <div className="detail-key">Scope</div>
                 <div className="detail-val">{String(rec.scope_display)}</div>
               </div>
-              {rec.scope_3_category && (
+              {Boolean(rec.scope_3_category) && (
                 <div className="detail-item">
                   <div className="detail-key">Scope 3 Category</div>
                   <div className="detail-val">{String(rec.scope_3_category)}</div>
@@ -208,43 +208,43 @@ export default function RecordDetailPage() {
                 <div className="detail-key">Source Document</div>
                 <div className="detail-val mono">{String(rec.source_document_ref || '—')}</div>
               </div>
-              {rec.plant_code && (
+              {Boolean(rec.plant_code) && (
                 <div className="detail-item">
                   <div className="detail-key">Plant Code</div>
                   <div className="detail-val mono">{String(rec.plant_code)}</div>
                 </div>
               )}
-              {rec.facility_name && (
+              {Boolean(rec.facility_name) && (
                 <div className="detail-item">
                   <div className="detail-key">Facility</div>
                   <div className="detail-val">{String(rec.facility_name)}</div>
                 </div>
               )}
-              {rec.cost_center && (
+              {Boolean(rec.cost_center) && (
                 <div className="detail-item">
                   <div className="detail-key">Cost Centre</div>
                   <div className="detail-val mono">{String(rec.cost_center)}</div>
                 </div>
               )}
-              {rec.department && (
+              {Boolean(rec.department) && (
                 <div className="detail-item">
                   <div className="detail-key">Department</div>
                   <div className="detail-val">{String(rec.department)}</div>
                 </div>
               )}
-              {rec.reviewed_by && (
+              {Boolean(rec.reviewed_by) && (
                 <div className="detail-item">
                   <div className="detail-key">Reviewed By</div>
                   <div className="detail-val">{String(rec.reviewed_by_name)} · {new Date(String(rec.reviewed_at)).toLocaleString('en-GB')}</div>
                 </div>
               )}
-              {rec.reviewer_note && (
+              {Boolean(rec.reviewer_note) && (
                 <div className="detail-item" style={{ gridColumn: '1/-1' }}>
                   <div className="detail-key">Reviewer Note</div>
                   <div className="detail-val">{String(rec.reviewer_note)}</div>
                 </div>
               )}
-              {rec.edit_note && (
+              {Boolean(rec.edit_note) && (
                 <div className="detail-item" style={{ gridColumn: '1/-1' }}>
                   <div className="detail-key">Edit Note</div>
                   <div className="detail-val" style={{ color: 'var(--amber-400)' }}>✎ {String(rec.edit_note)}</div>
@@ -293,7 +293,7 @@ export default function RecordDetailPage() {
                     </span>
                     <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>by {String(log.user_name)}</span>
                   </div>
-                  {log.note && <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)' }}>{String(log.note)}</div>}
+                  {Boolean(log.note) && <div style={{ fontSize: '0.78rem', color: 'var(--text-dim)' }}>{String(log.note)}</div>}
                   {Object.keys(log.old_values as object).length > 0 && (
                     <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: 4, fontFamily: 'monospace' }}>
                       before: {JSON.stringify(log.old_values)} → after: {JSON.stringify(log.new_values)}

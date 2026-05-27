@@ -12,11 +12,11 @@ export default function AuditPage() {
   }, []);
 
   const totalCo2e = records.reduce((sum, r) => sum + Number(r.co2e_kg), 0);
-  const byScope = records.reduce((acc, r) => {
+  const byScope = records.reduce<Record<string, number>>((acc, r) => {
     const s = String(r.scope);
     acc[s] = (acc[s] || 0) + Number(r.co2e_kg);
     return acc;
-  }, {} as Record<string, number>);
+  }, {});
 
   return (
     <AppShell>
