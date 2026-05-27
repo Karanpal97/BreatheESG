@@ -1,0 +1,42 @@
+Report_ID,Report_Name,Employee_ID,Employee_Name,Department,Cost_Center,Expense_Type,Transaction_Date,Origin_Airport,Destination_Airport,Cabin_Class,Distance_km,Airline,Flight_Number,Hotel_Name,Check_In_Date,Check_Out_Date,Nights,Ground_Mode,Ground_Distance_km,Pickup_Location,Dropoff_Location,Amount,Currency
+RPT-2024-0112,Q1 Business Travel,EMP-001,Alice Thornton,Sales,CC-SALES,Air,2024-01-08,LHR,JFK,Economy,,British Airways,BA177,,,,,,,,1240.00,GBP
+RPT-2024-0112,Q1 Business Travel,EMP-001,Alice Thornton,Sales,CC-SALES,Hotel,2024-01-08,,,,,,,The New Yorker,2024-01-08,2024-01-11,3,,,,485.00,USD
+RPT-2024-0112,Q1 Business Travel,EMP-001,Alice Thornton,Sales,CC-SALES,Air,2024-01-11,JFK,LHR,Economy,,British Airways,BA178,,,,,,,,1190.00,GBP
+RPT-2024-0115,Berlin Tech Summit,EMP-002,Marcus Wei,Engineering,CC-ENG,Air,2024-01-15,LHR,BER,Economy,940,easyJet,EZY8821,,,,,,,,189.00,GBP
+RPT-2024-0115,Berlin Tech Summit,EMP-002,Marcus Wei,Engineering,CC-ENG,Ground,2024-01-15,,,,,,,,,,,Taxi,12.4,Berlin Tegel,Hotel Adlon,,GBP
+RPT-2024-0115,Berlin Tech Summit,EMP-002,Marcus Wei,Engineering,CC-ENG,Hotel,2024-01-15,,,,,,,Hotel Adlon Berlin,2024-01-15,2024-01-17,2,,,,560.00,EUR
+RPT-2024-0115,Berlin Tech Summit,EMP-002,Marcus Wei,Engineering,CC-ENG,Ground,2024-01-17,,,,,,,,,,,Train,28.5,Berlin HBF,Berlin Airport,,GBP
+RPT-2024-0115,Berlin Tech Summit,EMP-002,Marcus Wei,Engineering,CC-ENG,Air,2024-01-17,BER,LHR,Economy,940,easyJet,EZY8822,,,,,,,,195.00,GBP
+RPT-2024-0120,Singapore Client Visit,EMP-003,Priya Sharma,Account Management,CC-ACCT,Air,2024-01-20,LHR,SIN,Business,,Singapore Airlines,SQ317,,,,,,,,4850.00,GBP
+RPT-2024-0120,Singapore Client Visit,EMP-003,Priya Sharma,Account Management,CC-ACCT,Ground,2024-01-20,,,,,,,,,,,Taxi,28.0,Changi Airport,Marina Bay Sands,,GBP
+RPT-2024-0120,Singapore Client Visit,EMP-003,Priya Sharma,Account Management,CC-ACCT,Hotel,2024-01-20,,,,,,,Marina Bay Sands,2024-01-20,2024-01-24,4,,,,3200.00,SGD
+RPT-2024-0120,Singapore Client Visit,EMP-003,Priya Sharma,Account Management,CC-ACCT,Air,2024-01-24,SIN,LHR,Business,,Singapore Airlines,SQ318,,,,,,,,4750.00,GBP
+RPT-2024-0205,Munich Board Meeting,EMP-004,James Patterson,Executive,CC-EXEC,Air,2024-02-05,LHR,MUC,First,,Lufthansa,LH2479,,,,,,,,2100.00,GBP
+RPT-2024-0205,Munich Board Meeting,EMP-004,James Patterson,Executive,CC-EXEC,Ground,2024-02-05,,,,,,,,,,,Car Rental,85.0,Munich Airport,BMW Group HQ,,GBP
+RPT-2024-0205,Munich Board Meeting,EMP-004,James Patterson,Executive,CC-EXEC,Hotel,2024-02-05,,,,,,,Hotel Bayerischer Hof,2024-02-05,2024-02-07,2,,,,890.00,EUR
+RPT-2024-0205,Munich Board Meeting,EMP-004,James Patterson,Executive,CC-EXEC,Air,2024-02-07,MUC,LHR,First,,Lufthansa,LH2480,,,,,,,,2050.00,GBP
+RPT-2024-0212,Paris Partnership,EMP-005,Sophie Laurent,Business Development,CC-BD,Air,2024-02-12,LHR,CDG,Economy,340,Air France,AF1680,,,,,,,,245.00,GBP
+RPT-2024-0212,Paris Partnership,EMP-005,Sophie Laurent,Business Development,CC-BD,Ground,2024-02-12,,,,,,,,,,,Train,35.2,CDG Airport,Paris City Centre,,GBP
+RPT-2024-0212,Paris Partnership,EMP-005,Sophie Laurent,Business Development,CC-BD,Hotel,2024-02-12,,,,,,,Le Marais Boutique Hotel,2024-02-12,2024-02-14,2,,,,380.00,EUR
+RPT-2024-0212,Paris Partnership,EMP-005,Sophie Laurent,Business Development,CC-BD,Air,2024-02-14,CDG,LHR,Economy,340,Air France,AF1681,,,,,,,,238.00,GBP
+RPT-2024-0220,Tokyo Partnership,EMP-006,Daniel Kim,Partnerships,CC-BD,Air,2024-02-20,LHR,NRT,Economy,,Japan Airlines,JL44,,,,,,,,1890.00,GBP
+RPT-2024-0220,Tokyo Partnership,EMP-006,Daniel Kim,Partnerships,CC-BD,Hotel,2024-02-20,,,,,,,Park Hyatt Tokyo,2024-02-20,2024-02-25,5,,,,4500.00,JPY
+RPT-2024-0220,Tokyo Partnership,EMP-006,Daniel Kim,Partnerships,CC-BD,Ground,2024-02-25,,,,,,,,,,,Train,80.0,Shinjuku,Narita Airport,,GBP
+RPT-2024-0220,Tokyo Partnership,EMP-006,Daniel Kim,Partnerships,CC-BD,Air,2024-02-25,NRT,LHR,Economy,,Japan Airlines,JL43,,,,,,,,1910.00,GBP
+RPT-2024-0305,NYC Annual Review,EMP-001,Alice Thornton,Sales,CC-SALES,Air,2024-03-05,LHR,JFK,Business,,American Airlines,AA101,,,,,,,,3650.00,GBP
+RPT-2024-0305,NYC Annual Review,EMP-001,Alice Thornton,Sales,CC-SALES,Ground,2024-03-05,,,,,,,,,,,Taxi,45.0,JFK Airport,Midtown Manhattan,,GBP
+RPT-2024-0305,NYC Annual Review,EMP-001,Alice Thornton,Sales,CC-SALES,Hotel,2024-03-05,,,,,,,The Peninsula New York,2024-03-05,2024-03-08,3,,,,1850.00,USD
+RPT-2024-0305,NYC Annual Review,EMP-001,Alice Thornton,Sales,CC-SALES,Air,2024-03-08,JFK,LHR,Business,,American Airlines,AA100,,,,,,,,3580.00,GBP
+RPT-2024-0312,Dublin Conference,EMP-007,Emma Walsh,Marketing,CC-MKT,Air,2024-03-12,LHR,DUB,Economy,448,Ryanair,FR1234,,,,,,,,89.00,GBP
+RPT-2024-0312,Dublin Conference,EMP-007,Emma Walsh,Marketing,CC-MKT,Ground,2024-03-12,,,,,,,,,,,Taxi,18.0,Dublin Airport,Convention Centre,,GBP
+RPT-2024-0312,Dublin Conference,EMP-007,Emma Walsh,Marketing,CC-MKT,Hotel,2024-03-12,,,,,,,Clayton Hotel Dublin,2024-03-12,2024-03-14,2,,,,310.00,EUR
+RPT-2024-0312,Dublin Conference,EMP-007,Emma Walsh,Marketing,CC-MKT,Air,2024-03-14,DUB,LHR,Economy,448,Ryanair,FR1235,,,,,,,,92.00,GBP
+RPT-2024-0320,Dubai Client,EMP-003,Priya Sharma,Account Management,CC-ACCT,Air,2024-03-20,LHR,DXB,Business,,Emirates,EK003,,,,,,,,3200.00,GBP
+RPT-2024-0320,Dubai Client,EMP-003,Priya Sharma,Account Management,CC-ACCT,Hotel,2024-03-20,,,,,,,Burj Al Arab,2024-03-20,2024-03-23,3,,,,5400.00,AED
+RPT-2024-0320,Dubai Client,EMP-003,Priya Sharma,Account Management,CC-ACCT,Air,2024-03-23,DXB,LHR,Business,,Emirates,EK004,,,,,,,,3150.00,GBP
+RPT-2024-0401,Amsterdam Summit,EMP-008,Lars Eriksen,Finance,CC-FIN,Air,2024-04-01,LHR,AMS,Economy,370,KLM,KL1009,,,,,,,,210.00,GBP
+RPT-2024-0401,Amsterdam Summit,EMP-008,Lars Eriksen,Finance,CC-FIN,Ground,2024-04-01,,,,,,,,,,,Train,17.1,Amsterdam Schiphol,Amsterdam Centraal,,GBP
+RPT-2024-0401,Amsterdam Summit,EMP-008,Lars Eriksen,Finance,CC-FIN,Hotel,2024-04-01,,,,,,,Pulitzer Amsterdam,2024-04-01,2024-04-03,2,,,,620.00,EUR
+RPT-2024-0401,Amsterdam Summit,EMP-008,Lars Eriksen,Finance,CC-FIN,Air,2024-04-03,AMS,LHR,Economy,370,KLM,KL1010,,,,,,,,205.00,GBP
+RPT-2024-0415,Bad Airport Code Test,EMP-009,Test User,IT,CC-IT,Air,2024-04-15,LHR,XXX,Economy,,Test Air,TA001,,,,,,,,500.00,GBP
+RPT-2024-0416,Another Bad Code,EMP-009,Test User,IT,CC-IT,Air,2024-04-16,ZZZ,LHR,Economy,,Unknown Air,UA999,,,,,,,,490.00,GBP

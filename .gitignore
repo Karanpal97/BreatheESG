@@ -1,0 +1,22 @@
+# Root .gitignore
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+/tmp/
+
+# Python venv (in case someone runs pip install in root)
+venv/
+__pycache__/
+
+# Backend venv, media, pycache
+backend/venv/
+backend/media/
+**/__pycache__/
+**/*.pyc

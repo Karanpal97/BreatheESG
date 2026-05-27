@@ -1,0 +1,29 @@
+# Dependencies — never commit
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Secrets — never commit
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Testing
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
