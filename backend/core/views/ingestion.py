@@ -25,6 +25,13 @@ class UploadView(APIView):
         if not company:
             return Response({'error': 'User has no associated company'}, status=400)
 
+        # ⚠ IMPORTANT: Read bytes BEFORE creating the job.
+        # IngestionJob.objects.create(file=file) causes Django to consume
+        # the entire file pointer when saving to FileField storage.
+        # After that, file.read() returns b'' (empty), breaking pandas.
+        file_bytes = file.read()
+        file.seek(0)  # Reset so Django can also save the file to storage
+
         job = IngestionJob.objects.create(
             company=company,
             source_type=source_type,
@@ -33,13 +40,6 @@ class UploadView(APIView):
             file=file,
             status=IngestionJob.STATUS_PENDING,
         )
-
-        file_bytes = file.read()
-        # Reset pointer in case it was partially read
-        try:
-            file.seek(0)
-        except Exception:
-            pass
 
         job = run_ingestion(job, file_bytes, request.user)
         return Response(IngestionJobSerializer(job).data, status=201)

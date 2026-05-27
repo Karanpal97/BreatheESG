@@ -6,6 +6,23 @@ Called synchronously (no Celery needed for prototype).
 from django.utils import timezone
 from .models import IngestionJob, RawRow, EmissionRecord, AuditLog, PlantLookup
 from .parsers import sap_fuel, utility_electricity, travel_concur
+import math
+
+
+def _clean_raw(d: dict) -> dict:
+    """
+    Pandas uses float('nan') for empty CSV cells.
+    PostgreSQL jsonb rejects NaN/Infinity — they are not valid JSON.
+    Replace all float NaN / Inf values with None before storing.
+    """
+    cleaned = {}
+    for k, v in d.items():
+        if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+            cleaned[k] = None
+        else:
+            cleaned[str(k)] = v
+    return cleaned
+
 
 
 def _build_plant_lookup(company) -> dict:
@@ -46,7 +63,7 @@ def run_ingestion(job: IngestionJob, file_bytes: bytes, user) -> IngestionJob:
         raw = RawRow(
             job=job,
             row_number=row_data['row_number'],
-            raw_data=row_data['raw_data'],
+            raw_data=_clean_raw(row_data['raw_data']),   # ← sanitise NaN → None
             parse_status=status_map.get(row_data['status'], RawRow.PARSE_FAILED),
             parse_errors=row_data.get('errors', []),
             parse_warnings=row_data.get('warnings', []),
